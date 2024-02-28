@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>formulario:</h1>
+
+    <hr>
+
+    <form action="envio.php" method="post" target="_blank">
+        <label for="usuario">email:</label>
+        <input type="email" id="usuario"  name="usuario" placeholder="escribe aqui tu usuario" maxlength="10" minlength="4" pattern="[A-Za-z{9}]" required/>
+        <small>debe tener 9 caracteres</small>
+        <br>
+        <label for="password">contraseña</label>
+        <input type="password" id="password" name="password" placeholder="escribe aqui tu contraseña" required/>
+        <small>este campo es obligatorio</small>
+        <br>
+        <input type="checkbox" name="condiciones" id="condiciones"> ¿esta de acuerdo con los aumentos?
+        <br>
+        <input type="checkbox" name="lenguajes" value="html">html
+
+        <input type="checkbox" name="lenguajes" value="css">css
+        <input type="checkbox" name="lenguajes" value="javascript">javascript
+        <input type="checkbox" name="lenguajes" value="react">react
+        <br>
+        <input type="radio" name="lenguajes" value="html" required>html
+        <input type="radio" name="lenguajes" value="css" required>css
+        <input type="radio" name="lenguajes" value="javascript" required>javascript
+        <input type="radio" name="lenguajes" value="react"required>react
+        <br>
+        <label for="programando">años programando:</label>
+        <input type="number" id="programando"  name="programando" placeholder="años programando" max="3" min="0"/>
+        <br>
+        <br>
+        <label for="archivo">subi tu cv</label>
+        <input type="file" id="archivo"  name="archivo" value="file" multiple/>
+        <br>
+        <br>
+        <label for="fecha">fecha de nacimiento:</label>
+        <input type="date" id="fecha" name="fecha" max="2004/03/17"/> ###IMPORTANTE###
+        <br><br>
+
+        <label for="opinion">subi tu cv</label>
+        <textarea name="opinion" id="opinion" placeholder="escribi una opinion" rows="10" cols="50"></textarea>
+        <br>
+        <br>
+        
+        <select name="pais" id="pais">
+            <optgroup label="ameria">
+                <option value="argentina">argentina</option>
+                <option value="uruguay">uruguay</option>
+                <option value="mexico" selected="selected">mexico</option>
+            </optgroup>
+
+            <optgroup label="europa">
+
+                <option value="francia">francia</option>
+                <option value="croacia">croacia</option>
+                <option value="marruescos">marruescos</option>
+            </optgroup>
+        
+
+        </select>
+
+
+        <br>
+        <br>
+        <input type="submit"value="enviar datos">
+        <input type="reset" value="resetea el formulario">
+        <br><br>
+        <button onclick="alert('suscribite a mi channel')"> hazme click</button>
+    </form>
+</body>
+</html>
